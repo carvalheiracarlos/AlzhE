@@ -79,7 +79,7 @@ TEMPLATES = [
 
 LOGIN_REDIRECT_URL = 'swagger/'
 
-#WSGI_APPLICATION = 'AlzhE.wsgi.application'
+WSGI_APPLICATION = 'AlzhE.wsgi.application'
 
 
 SIMPLE_JWT = {
