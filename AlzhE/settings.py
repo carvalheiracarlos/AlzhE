@@ -96,7 +96,6 @@ AUTHENTICATION_BACKENDS = (
 
 
 DEFAULT_RENDERER_CLASSES = [
-    'djangorestframework_camel_case.render.CamelCaseJSONRenderer',
 ]
 
 REST_FRAMEWORK = {
@@ -106,7 +105,7 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.SessionAuthentication',
     ),
     'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework.permissions.DjangoObjectPermissions',
+        'rest_framework.permissions.AllowAny',
     ),
     'DEFAULT_RENDERER_CLASSES': DEFAULT_RENDERER_CLASSES,
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
